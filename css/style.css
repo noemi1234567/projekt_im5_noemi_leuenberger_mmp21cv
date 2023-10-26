@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Hintergrundfarbe */
+body {
+    background-color: #F8E7F1;
+    font-family: "Nunito";
+}
+
+/* Schriftgrösse */
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font: 1em;;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* Styling Navigation Bar */
+/* Styling Navigation Bar */
+/* Styling Navigation Bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+/* beim drüberhovern wird der Hintergrund schwarz */
+li a:hover {
+    color: white;
+}
+
+/* die Seite, auf der der User ist, wird hervorgehoben */
+.active {
+    background-color: #04AA6D;
+}
+
+.navigation {
+    padding-top: 50px;
+}
+
+/* Logo-Gestaltung in der Navigation */
+.bild-logo {
+    max-width: 10vw;
+    height: auto;
+}
+
+/* Logo-Gestaltung Brief */
+.brief {
+    max-width: 30px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.brief:hover {
+    max-width: 40px;
+}
+
+/* Logo-Gestaltung whatsapp */
+.whatsapp {
+    max-width: 30px;
+    height: auto;
+}
+
+.whatsapp:hover {
+    max-width: 40px;
+}
+
+/* Logo-Gestaltung facebook */
+.facebook {
+    max-width: 30px;
+    height: auto;
+}
+.facebook:hover {
+    max-width: 40px;
+}
+/* Logo-Gestaltung x */
+.x {
+    max-width: 30px;
+    height: auto;
+}
+.x:hover {
+    max-width: 40px;
+}
+
+.teilen-icons {
+    width: 30px;
+}
+
+/* Gestaltung header */
+header {
+    /*position: fixed;*/
+    top: 0;
+    background-color: #FA7ACD;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding: 20px;
+    align-items: end;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* so mache ich, dass Abstände zwischen den Artikeln sind */
+    row-gap: 30px;
+    column-gap: 30px;
+    /* einmitten */
+
+}
+
+article {
+    padding: 20px;
+}
+
+/* Hintergrund der News-Artikel (die pinken Kacheln) */
+.news-artikel-hintergrund {
+    background-color: #FA7ACD;
+}
+
+
+/* Buttons "zum Artikel */
+.button {
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: black;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* wenn ich einen sehr grossen button hätte würde es so nicht über den Rand gehen */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* sobald man über den Button hovert gibt es eine andere Farbe */
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* sobald man über den Button hovert gibt es eine andere Farbe */
+.titel-hover:hover {
+    color: white;
+}
+
+/* die Bilder werden so nicht verzogen */
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* einmitten des ganzen Contents */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Abstand zwischen Startseiten-Text und News-Beiträgen */
+.text-startseite {
+    margin-bottom: 60px;
+}
+
+/* mehr-laden Button zentrieren */
+.mehr-laden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid für die Event-Beiträge auf der Startseite */
+.event-beitraege {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.artikel-1 {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.artikel-2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.artikel-3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.artikel-4 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+/* beim hovern über das Bild soll ein anderes Bild (mit der roten Nase) erscheinen */
+.rote-nase-hovern {
+    position: relative;
+}
+
+.original-bild {
+    display: block;
+}
+
+.hover-bild {
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.rote-nase-hovern:hover .original-bild {
+    display: none;
+}
+
+.rote-nase-hovern:hover .hover-bild {
+    display: block;
+}
+/* Name auf der Über uns-Seite zentrieren*/
+.name-zentrieren {
+    text-align: center;
+}
+.funktion-zentrieren {
+    text-align: center;
+}
+.mitarbeiter-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+/* Grid-Styling ueber-mich Seite*/
+.grid-ueber-mich { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    }
+    .fakt1 { grid-area: 1 / 1 / 5 / 2; } 
+    .fakt2 { grid-area: 1 / 2 / 2 / 4; } 
+    .fakt3 { grid-area: 2 / 2 / 3 / 4; } 
+    .fakt4 { grid-area: 3 / 2 / 4 / 4; } 
+    .fakt5 { grid-area: 4 / 2 / 5 / 3; } 
+    .fakt6 { grid-area: 4 / 3 / 5 / 4; } 
+
+    
+
+/* Slideshow */
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
