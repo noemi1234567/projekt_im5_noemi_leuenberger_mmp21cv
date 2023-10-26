@@ -1,3 +1,8 @@
+/* Variable für Farbe definieren */
+:root {
+    --pinker-hintergrund: #FA7ACD;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -117,11 +122,31 @@ li a:hover {
     max-height: 50px;
 }
 
+/* Logo-Gestaltung Kalender */
+.zeit {
+    max-height: 40px;
+    padding: 5px;
+}
+
+.zeit:hover {
+    max-height: 50px;
+}
+
+/* Logo-Gestaltung Ort */
+.ort {
+    max-height: 40px;
+    padding: 5px;
+}
+
+.ort:hover {
+    max-height: 50px;
+}
+
 /* Gestaltung header */
 header {
     /*position: fixed;*/
     top: 0;
-    background-color: #FA7ACD;
+    background-color: var(--pinker-hintergrund);
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -145,7 +170,7 @@ article {
 
 /* Hintergrund der News-Artikel (die pinken Kacheln) */
 .news-artikel-hintergrund {
-    background-color: #FA7ACD;
+    background-color: var(--pinker-hintergrund);
 }
 
 
@@ -435,8 +460,10 @@ main {
     padding: 10px 12px;
     text-decoration: none;
     color: black;
-    border: 1px solid transparent; /* Add a transparent border initially */
-    transition: border 0.3s; /* Add a transition for a smooth effect */
+    border: 1px solid transparent;
+    /* Add a transparent border initially */
+    transition: border 0.3s;
+    /* Add a transition for a smooth effect */
 }
 
 /* Show the dropdown content when the button is hovered over */
@@ -455,8 +482,9 @@ main {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 300px; /* Adjust the width as needed */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 300px;
+    /* Adjust the width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -479,15 +507,17 @@ main {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 300px; /* Adjust the width as needed */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 300px;
+    /* Adjust the width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 /* Style the dropdown sections with titles */
 .dropdown .dropdown-section {
     display: inline-block;
-    vertical-align: top; /* Align sections vertically */
+    vertical-align: top;
+    /* Align sections vertically */
     padding: 10px;
 }
 
@@ -506,17 +536,110 @@ main {
     color: black;
     border: 1px solid transparent;
     transition: border 0.3s;
-    padding: 5px 10px; /* Adjust padding as needed */
+    padding: 5px 10px;
+    /* Adjust padding as needed */
 }
 
 /* Change color on hover and add a black border */
 .dropdown .dropdown-section a:hover {
-    background-color: #FA7ACD;
+    background-color: var(--pinker-hintergrund);
     border: 1px solid black;
 }
 
+.grid-event {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 
+.ort {
+    grid-area: 1 / 1 / 2 / 2;
+}
 
+.zeit {
+    grid-area: 1 / 2 / 2 / 3;
+}
 
+.text-event {
+    grid-area: 2 / 1 / 3 / 3;
+}
 
+/* Styling Footer */
+footer {
+    background-color: var(--pinker-hintergrund);
+    color: black;
+    padding: 20px 0;
+}
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+}
+
+.footer-section p {
+    font-size: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+}
+
+/* Styling Quicklinks"*/
+.quicklinks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+/* alle sections im Footer sollen gleich gross sein*/
+.footer-section{
+    width: 20px;
+}
+
+.hidden {
+    display: none;
+}

@@ -127,10 +127,28 @@
             <h2>Hier kommt ein Text zu den Event</h2>
         </div>
         <!-- Beginn Event-Beiträge -->
+        <!-- Slideshow -->
+        <!-- Slideshow container -->
+
         <section class="event-beitraege">
-            <article class="news-artikel-hintergrund artikel-1">
-                <img src="images/news1.png" alt="News-1">
-                <h2 class="titel-hover">Event</h2>
+            <article class="news-artikel-hintergrund artikel-1 slideshow-container">
+                <!-- Slideshow directly in the first article -->
+                <div class="mySlides fade">
+                    <img src="images/festival.png" style="width:100%">
+                    <!-- <div class="text">Caption Text 1</div> -->
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/zirkus.png" style="width:100%">
+                    <!-- <div class="text">Caption Text 2</div> -->
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/konzert.png" style="width:100%">
+                    <!-- <div class="text">Caption Text 3</div> -->
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                <h2 class="titel-hover">Event 1</h2>
                 <p>Hier kommt der Lead. Hier steht dann ganz grob um was es bei dem Event geht,
                     sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
                 <a href="https://www.fhgr.ch" target="_blank" class="button">zum Event</a>
@@ -164,8 +182,37 @@
         <div id="additional-articles"></div>
     </main>
 
-    <script src="js/script.js"></script>
+
     <script src="js/index.js"></script>
 </body>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra tincidunt nisi, ut finibus lorem
+                luctus ac.</p>
+        </div>
+        <div class="footer-section">
+            <h2>Contact Us</h2>
+            <p>Email: pink@radio.ch</p>
+            <p>Phone: 061 354 78 39</p>
+            <p>Address: Limmatstrasse 21</p>
+            <p>9005 Zürich</p>
+        </div>
+        <!-- Quicklinks -->
+        <div class="footer-section">
+            <h2>Quick Links</h2>
+            <div class="quicklinks">
+                <div class="quicklink1">Home</div>
+                <div class="quicklink2">News</div>
+                <div class="quicklink3">Events</div>
+                <div class="quicklink4">Über uns</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Pink Radio. All rights reserved.</p>
+    </div>
+</footer>
 
 </html>

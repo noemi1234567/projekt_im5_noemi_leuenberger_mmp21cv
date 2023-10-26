@@ -1,9 +1,9 @@
 let slideIndex = 1;
 if (document.querySelector(".mySlides")){
 showSlides(slideIndex);
-setInterval(function () {
-  plusSlides(1); // Advance to the next slide
-}, 3000); // 3000 milliseconds = 3 seconds 
+// setInterval(function () {
+//   plusSlides(1); // Advance to the next slide
+// }, 3000); // 3000 milliseconds = 3 seconds 
 
 }
 
