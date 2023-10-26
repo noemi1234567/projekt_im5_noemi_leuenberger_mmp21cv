@@ -474,6 +474,16 @@ main {
 }
 
 
+/* Style the dropdown content (hidden by default) */
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 300px; /* Adjust the width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
 /* Style the dropdown sections with titles */
 .dropdown .dropdown-section {
     display: inline-block;
@@ -502,7 +512,7 @@ main {
 /* Change color on hover and add a black border */
 .dropdown .dropdown-section a:hover {
     background-color: #FA7ACD;
-    border: 1px solid #000;
+    border: 1px solid black;
 }
 
 
