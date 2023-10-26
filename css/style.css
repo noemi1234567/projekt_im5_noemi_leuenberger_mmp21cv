@@ -78,44 +78,39 @@ li a:hover {
 
 /* Logo-Gestaltung Brief */
 .brief {
-    max-width: 30px;
-    height: auto;
-    margin-right: 20px;
+    max-height: 40px;
+    padding: 5px;
 }
 
 .brief:hover {
-    max-width: 40px;
+    max-height: 50px;
 }
 
 /* Logo-Gestaltung whatsapp */
 .whatsapp {
-    max-width: 30px;
-    height: auto;
+    max-height: 40px;
+    padding: 5px;
 }
 
 .whatsapp:hover {
-    max-width: 40px;
+    max-height: 50px;
 }
 
 /* Logo-Gestaltung facebook */
 .facebook {
-    max-width: 30px;
-    height: auto;
+    max-height: 40px;
+    padding: 5px;
 }
 .facebook:hover {
-    max-width: 40px;
+    max-height: 50px;
 }
 /* Logo-Gestaltung x */
 .x {
-    max-width: 30px;
-    height: auto;
+    max-height: 40px;
+    padding: 5px;
 }
 .x:hover {
-    max-width: 40px;
-}
-
-.teilen-icons {
-    width: 30px;
+    max-height: 50px;
 }
 
 /* Gestaltung header */
@@ -362,4 +357,19 @@ main {
     @keyframes fade {
       from {opacity: .4}
       to {opacity: 1}
+    }
+
+    /* Abstand zwischen den Icons und dem Wort "teilen" */
+    .abstand-teilen {
+        padding-bottom: 10px;
+    }
+
+        /* Code, damit die neu geladenen Artikel auf der Startseite den gleichen Style haben wie die obrigen Artikel */
+    #additional-articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 30px;
+        box-sizing: border-box;
+        padding: 20px;
     }

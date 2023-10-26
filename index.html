@@ -16,8 +16,8 @@
 <body>
 
     <header>
-        <!-- Logo einbinden-->
-        <img src="images/logo.png" class="bild-logo">
+        <!-- Logo einbinden (mit Link zur Startseite)-->
+        <a href="index.html"><img src="images/logo.png" class="bild-logo"></a>
         <!-- Navigation Bar-->
         <nav>
             <ul class="navigation">
@@ -91,9 +91,13 @@
         </section>
         <!-- Ende News-Beiträge -->
 
-        <!-- mehr laden -->
+        <!-- Button mehr laden -->
+        <!-- Container for additional articles -->
+        <div id="additional-articles"></div>
+
+        <!-- "Mehr laden" button -->
         <div class="mehr-laden">
-            <a href="news.html" class="button">Mehr laden</a>
+            <button class="button" id="load-more-button">Mehr laden</button>
         </div>
 
         <div class="text-startseite">
@@ -134,6 +138,10 @@
             </article>
         </section>
         <!-- Ende Event-Beiträge -->
+
+        <!-- beim Klicken auf "mehr laden, sollen mehr Beiträge angezeigt werden" -->
+        <!-- Container for additional articles -->
+        <div id="additional-articles"></div>
     </main>
 
     <script src="js/script.js"></script>
