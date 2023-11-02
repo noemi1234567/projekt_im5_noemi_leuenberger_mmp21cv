@@ -45,7 +45,7 @@ function loadMoreArticles() {
   const newArticle = `
   <article class="news-artikel-hintergrund">
   <img src="images/news1.png" alt="News-1" width="280" height="100">
-  <h2 class="titel-hover">Schlagzeile</h2>
+  <h2 class="titel-hover">Noemi</h2>
   <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
       sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
   <a href="artikel.html" class="button">zum Artikel</a>

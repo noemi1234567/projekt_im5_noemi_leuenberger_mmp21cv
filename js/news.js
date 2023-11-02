@@ -18,24 +18,21 @@ document.addEventListener("DOMContentLoaded", function() {
     // das sind alle Artikel von der Gruppe Article1
     const newArticle1 = `
     <article class="news-artikel-hintergrund">
-    <img src="images/news1.png" alt="News-1" width="280" height="100">
-    <h2 class="titel-hover">Hallo1</h2>
-    <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-        sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+    <img src="images/homeoffice.png" alt="News-1" width="280" height="100">
+    <h2 class="titel-hover">Homeoffice: Herausforderungen und Chancen</h2>
+    <p>Immer mehr Menschen arbeiten von zu Hause aus, was sowohl Chancen als auch Herausforderungen mit sich bringt.</p>
     <a href="artikel.html" class="button">zum Artikel</a>
   </article>
   <article class="news-artikel-hintergrund">
-    <img src="images/news1.png" alt="News-1" width="280" height="100">
-    <h2 class="titel-hover">Schlagzeile</h2>
-    <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-        sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+    <img src="images/upcycling.png" alt="News-1" width="280" height="100">
+    <h2 class="titel-hover">Upcycling: Trend für eine nachhaltige Zukunft</h2>
+    <p>Upcycling wird immer beliebter als kreative Möglichkeit, Abfall zu reduzieren und Ressourcen zu schonen.</p>
     <a href="artikel.html" class="button">zum Artikel</a>
   </article>
   <article class="news-artikel-hintergrund">
-    <img src="images/news1.png" alt="News-1" width="280" height="100">
-    <h2 class="titel-hover">Schlagzeile</h2>
-    <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-        sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+    <img src="images/flugzeug.png" alt="News-1" width="280" height="100">
+    <h2 class="titel-hover">Elektrische Flugzeuge: Die Zukunft der Luftfahrt?</h2>
+    <p>Elektrische Flugzeuge gewinnen an Popularität und könnten die Luftfahrtbranche revolutionieren.</p>
     <a href="artikel.html" class="button">zum Artikel</a>
   </article>
     `;
@@ -43,17 +40,15 @@ document.addEventListener("DOMContentLoaded", function() {
         // das sind alle Artikel von der Gruppe Article2
     const newArticle2 = `
         <article class="news-artikel-hintergrund">
-        <img src="images/news1.png" alt="News-1" width="280" height="100">
-        <h2 class="titel-hover">Hallo2</h2>
-        <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-            sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+        <img src="images/meditation.png" alt="News-1" width="280" height="100">
+        <h2 class="titel-hover">Die Macht der Meditation: Stressabbau und innere Ruhe</h2>
+        <p>Meditation erweist sich als wirksame Methode, um Stress abzubauen und innere Ruhe zu finden.</p>
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
       <article class="news-artikel-hintergrund">
-        <img src="images/news1.png" alt="News-1" width="280" height="100">
-        <h2 class="titel-hover">Schlagzeile</h2>
-        <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-            sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+        <img src="images/tiefsee.png" alt="News-1" width="280" height="100">
+        <h2 class="titel-hover">Atlanktik: Neue Entdeckungen und faszinierende Kreaturen</h2>
+        <p>Tiefseeforschung enthüllt erstaunliche Welten unter der Wasseroberfläche und faszinierende Lebewesen, die bisher unbekannt waren.</p>
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
       <article class="news-artikel-hintergrund">
