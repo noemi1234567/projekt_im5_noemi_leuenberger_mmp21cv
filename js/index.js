@@ -142,18 +142,19 @@ console.log("articles loades");
 
 // JavaScript für die Steuerung des Radioplayers
 var radioPlayer = document.getElementById('radioPlayer');
+var playButton = document.querySelector('.play')
+var pauseButton = document.querySelector('.pause')
 
 function playRadio() {
+    playButton.style.display = "none";
+    pauseButton.style.display = "block";
     radioPlayer.play();
 }
 
 function pauseRadio() {
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
     radioPlayer.pause();
-}
-
-function stopRadio() {
-    radioPlayer.pause();
-    radioPlayer.currentTime = 0;
 }
 
 function forwardRadio() {

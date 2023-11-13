@@ -57,7 +57,8 @@
             <!-- svg (brief) einbinden-->
             <a href="mailto:pink­@radio.ch"><img src="images/brief.svg" class="brief-front"></a>
             <!-- svg (telefon) einbinden-->
-            <a href="https://wa.me/41791771988" target="_blank"><img src="images/whatsapp.svg" class="whatsapp-front"></a>
+            <a href="https://wa.me/41791771988" target="_blank"><img src="images/whatsapp.svg"
+                    class="whatsapp-front"></a>
         </div>
     </header>
 
@@ -193,21 +194,28 @@
     </div>
 
     <div class="radio-player-container">
-    <div class="layout-radio-player"> 
-        <div class="play"><div onclick="playRadio()"class="play-button radio-control"><img src="images/play.svg"></div></div> 
-        <div class="pause"><div onclick="pauseRadio()"class="pause-button radio-control"><img src="images/pause.svg"></div></div> 
-        <div class="stop"><div onclick="stopRadio()"class="stop-button radio-control"><img src="images/stop.svg"></div></div>  
-        <div class="rueckwaerts"><div onclick="backwardRadio()" class="zurueckspulen-button radio-control"><img src="images/backward.svg"></div></div> 
-        <div class="vorwaerts"><div onclick="forwardRadio()" class="vorspulen-button radio-control"><img src="images/forward.svg"></div></div>
+        <div class="news-element"><img src="images/volume.svg"></div>
+        <div class="control-elemente">
+            <div class="rueckwaerts">
+                <div onclick="backwardRadio()" class="zurueckspulen-button radio-control"><img
+                        src="images/backward.svg"></div>
+            </div>
+            <div class="play">
+                <div onclick="playRadio()" class="play-button radio-control"><img src="images/play.svg"></div>
+            </div>
+            <div class="pause">
+                <div onclick="pauseRadio()" class="pause-button radio-control"><img src="images/pause.svg"></div>
+            </div>
+            <div class="vorwaerts">
+                <div onclick="forwardRadio()" class="vorspulen-button radio-control"><img src="images/forward.svg">
+                </div>
+            </div>
+        </div>
+        <!-- Lautstärkeregler -->
+        <div class="lautstaerke-elemente"><input type="range" min="0" max="1" step="0.1" value="1" oninput="setVolume(this.value)"><img src="images/volume.svg"></div>
     </div>
-</div>
-
-    
-    <!-- Lautstärkeregler -->
-    <input type="range" min="0" max="1" step="0.1" value="1" oninput="setVolume(this.value)">
-
-
-    <script src="js/index.js"></script>
+    <script src="js/index.js">
+    </script>
 </body>
 <footer>
     <div class="footer-content">
