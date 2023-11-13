@@ -91,10 +91,11 @@ li a:hover {
 .brief-front {
     max-height: 50px;
     padding: 5px;
+    transition: all 0.2s ease-in;
 }
 
 .brief-front:hover {
-    max-height: 60px;
+    transform: scale(1.2);
 }
 
 /* Logo-Gestaltung Whatsapp-Navigation */
@@ -104,7 +105,7 @@ li a:hover {
 }
 
 .whatsapp-front:hover {
-    max-height: 60px;
+    transform: scale(1.2);
 }
 
 /* Logo-Gestaltung Brief */
@@ -114,7 +115,7 @@ li a:hover {
 }
 
 .brief:hover {
-    max-height: 50px;
+    transform: scale(1.2);
 }
 
 /* Logo-Gestaltung whatsapp */
@@ -124,7 +125,7 @@ li a:hover {
 }
 
 .whatsapp:hover {
-    max-height: 50px;
+    transform: scale(1.2);
 }
 
 /* Logo-Gestaltung facebook */
@@ -134,7 +135,7 @@ li a:hover {
 }
 
 .facebook:hover {
-    max-height: 50px;
+    transform: scale(1.2);
 }
 
 /* Logo-Gestaltung x */
@@ -144,7 +145,7 @@ li a:hover {
 }
 
 .x:hover {
-    max-height: 50px;
+    transform: scale(1.2);
 }
 
 /* Logo-Gestaltung Kalender */
@@ -164,7 +165,7 @@ li a:hover {
 }
 
 .ort:hover {
-    max-height: 50px;
+    transform: scale(1.2);
 }
 
 /* Gestaltung header */
@@ -707,20 +708,94 @@ footer {
     max-width: 200px;
 }
 
-.parent { 
+.moderatoren-morgenshow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.moderator1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.moderator2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.name-moderator1 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.funktion-moderator1 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.name-moderator2 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.funktion-moderator2 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.layout-morgenshow-moderator {
+    text-align: center;
+}
+
+#radioPlayerContainer {
+    display: none;
+}
+
+#radioPlayer {
+    width: 100%;
+    /* Vollständige Breite des Containers verwenden */
+}
+
+/* Styling Radioplayer-Buttons */
+.radio-control img{
+    max-height: 20px;
+    max-width: 20px;
+}
+
+/* Layout des Radio Players */
+.layout-radio-player { 
     display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: 1fr; 
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
     }
-    .moderator1 { grid-area: 1 / 1 / 2 / 2; } 
-    .moderator2 { grid-area: 1 / 2 / 2 / 3; } 
-    .name-moderator1 { grid-area: 2 / 1 / 3 / 2; } 
-    .funktion-moderator1 { grid-area: 2 / 2 / 3 / 3; } 
-    .name-moderator2 { grid-area: 3 / 1 / 4 / 2; } 
-    .funktion-moderator2 { grid-area: 3 / 2 / 4 / 3; } 
+    .play { grid-area: 1 / 1 / 2 / 2; } 
+    .pause { grid-area: 1 / 2 / 2 / 3; } 
+    .stop { grid-area: 1 / 3 / 2 / 4; } 
+    .rueckwaerts { grid-area: 1 / 4 / 2 / 5; } 
+    .vorwaerts { grid-area: 1 / 5 / 2 / 6; } 
 
-    .layout-morgenshow-moderator {
-        text-align: center;
+    .radio-player-container {
+        padding: 20px;
+        background-color: black;
     }
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Smartphone */
+@media only screen and (max-width: 481px) {
+    body {
+        background-color: green;
+    }
+}
