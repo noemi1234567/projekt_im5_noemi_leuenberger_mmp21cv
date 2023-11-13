@@ -52,10 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
       <article class="news-artikel-hintergrund">
-        <img src="images/news1.png" alt="News-1" width="280" height="100">
-        <h2 class="titel-hover">Schlagzeile</h2>
-        <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-            sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+        <img src="images/shopping.png" alt="News-1" width="280" height="100">
+        <h2 class="titel-hover">Der Boom des Online-Shoppings</h2>
+        <p>Der Trend zum Online-Shopping erreicht immer neue Höhen, da Verbraucher bequeme Einkaufsmöglichkeiten von zu Hause aus schätzen.</p>
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
         `;

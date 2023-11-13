@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-    font: 1em;
+    font-size: 1.5em;
     ;
 }
 
@@ -238,7 +238,7 @@ main {
 
 /* Abstand zwischen Startseiten-Text und News-Beiträgen */
 .text-startseite {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 /* mehr-laden Button zentrieren */
@@ -455,7 +455,8 @@ main {
     row-gap: 30px;
     column-gap: 30px;
     box-sizing: border-box;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Styling Dropdown-Menu */
