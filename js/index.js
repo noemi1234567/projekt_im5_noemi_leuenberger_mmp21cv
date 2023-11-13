@@ -33,32 +33,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-    // Slideshow
-    let slideIndex = 1;
+// Slideshow
+let slideIndex = 1;
 
-    function showSlides(n) {
-        const slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {
-            slideIndex = 1;
-        }
-        if (n < 1) {
-            slideIndex = slides.length;
-        }
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
+function showSlides(n) {
+    const slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {
+        slideIndex = 1;
     }
-
-    function plusSlides(n) {
-        showSlides((slideIndex += n));
+    if (n < 1) {
+        slideIndex = slides.length;
     }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
 
-    showSlides(slideIndex);
-    setInterval(function () {
-        plusSlides(1); // Advance to the next slide
-      }, 3000); // 3000 milliseconds = 3 seconds 
-      
+function plusSlides(n) {
+    showSlides((slideIndex += n));
+}
+
+showSlides(slideIndex);
+setInterval(function () {
+    plusSlides(1); // Advance to the next slide
+}, 3000); // 3000 milliseconds = 3 seconds 
+
 
 
 
@@ -76,24 +76,24 @@ window.addEventListener("click", function (event) {
 // das sind alle Artikel von der Gruppe Article1
 const newArticle1 = `
     <article class="news-artikel-hintergrund">
-    <img src="images/news1.png" alt="News-1" width="280" height="100">
-    <h2 class="titel-hover">Hallo1</h2>
-    <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-        sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+    <img src="images/autoindustrie.png" alt="News-1" width="280" height="100">
+    <h2 class="titel-hover">Neue Technologie revolutioniert die Autoindustrie</h2>
+    <p>Eine bahnbrechende Technologie könnte die Art und Weise, wie Autos hergestellt und betrieben werden,
+    grundlegend verändern.</p>
     <a href="artikel.html" class="button">zum Artikel</a>
   </article>
   <article class="news-artikel-hintergrund">
-    <img src="images/news1.png" alt="News-1" width="280" height="100">
-    <h2 class="titel-hover">Schlagzeile</h2>
-    <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-        sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+    <img src="images/diagnose.png" alt="News-1" width="280" height="100">
+    <h2 class="titel-hover">KI in der Medizin: Hoffnung auf bessere Diagnosen</h2>
+    <p>Künstliche Intelligenz wird in der medizinischen Diagnose immer wichtiger und verspricht genauere und
+    schnellere Ergebnisse.</p>
     <a href="artikel.html" class="button">zum Artikel</a>
   </article>
   <article class="news-artikel-hintergrund">
-    <img src="images/news1.png" alt="News-1" width="280" height="100">
-    <h2 class="titel-hover">Schlagzeile</h2>
-    <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-        sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+    <img src="images/pyramiden.png" alt="News-1" width="280" height="100">
+    <h2 class="titel-hover">Neue Entdeckung enthüllt das Geheimnis der Pyramiden</h2>
+    <p>Archäologen haben eine bahnbrechende Entdeckung gemacht, die das Rätsel der antiken ägyptischen
+    Pyramiden aufdecken könnte.</p>
     <a href="artikel.html" class="button">zum Artikel</a>
   </article>
     `;
@@ -101,24 +101,21 @@ const newArticle1 = `
 // das sind alle Artikel von der Gruppe Article2
 const newArticle2 = `
         <article class="news-artikel-hintergrund">
-        <img src="images/news1.png" alt="News-1" width="280" height="100">
-        <h2 class="titel-hover">Hallo2</h2>
-        <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-            sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+        <img src="images/homeoffice.png" alt="News-1" width="280" height="100">
+        <h2 class="titel-hover">Homeoffice: Herausforderungen und Chancen</h2>
+        <p>Immer mehr Menschen arbeiten von zu Hause aus, was sowohl Chancen als auch Herausforderungen mit sich bringt.</p>
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
       <article class="news-artikel-hintergrund">
-        <img src="images/news1.png" alt="News-1" width="280" height="100">
-        <h2 class="titel-hover">Schlagzeile</h2>
-        <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-            sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+        <img src="images/upcycling.png" alt="News-1" width="280" height="100">
+        <h2 class="titel-hover">Upcycling: Trend für eine nachhaltige Zukunft</h2>
+        <p>Upcycling wird immer beliebter als kreative Möglichkeit, Abfall zu reduzieren und Ressourcen zu schonen.</p>
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
       <article class="news-artikel-hintergrund">
-        <img src="images/news1.png" alt="News-1" width="280" height="100">
-        <h2 class="titel-hover">Schlagzeile</h2>
-        <p>Hier kommt der Lead. Hier steht dann ganz grob um was es in dem Artikel geht,
-            sodass die Leute dann unten auf den Button clicken, damit sie weiterlesen können.</p>
+        <img src="images/flugzeug.png" alt="News-1" width="280" height="100">
+        <h2 class="titel-hover">Elektrische Flugzeuge: Die Zukunft der Luftfahrt?</h2>
+        <p>Elektrische Flugzeuge gewinnen an Popularität und könnten die Luftfahrtbranche revolutionieren.</p>
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
         `;
