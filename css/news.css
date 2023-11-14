@@ -807,14 +807,13 @@ footer {
 
 .radio-player-container {
     background-color: black;
-    color: #F8E7F1;
+    color: white;
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
+    margin-bottom: 30px;
     width: 100%;
-    z-index: 1000;
     bottom: 0;
     left: 0;
 }
