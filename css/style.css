@@ -598,7 +598,9 @@ footer {
     background-color: var(--pinker-hintergrund);
     color: black;
     padding: 20px 0;
-    margin: 10px 10px 50px 10px;
+    margin: 10px 10px 90px 10px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .footer-content {
@@ -784,6 +786,12 @@ footer {
 
 .news-element {
     display: flex;
+    color: white;
+}
+
+.album-cover {
+    height: 50px;
+    width: 50px;
 }
 
 /* Layout des Radio Players
