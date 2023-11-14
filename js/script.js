@@ -79,3 +79,5 @@ function loadMoreArticles() {
 const loadMoreButton = document.getElementById("load-more-button");
 console.log(loadMoreButton);
 loadMoreButton.addEventListener("click", loadMoreArticles);
+
+

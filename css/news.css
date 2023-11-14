@@ -845,15 +845,50 @@ footer {
 
 
 /* Tablet */
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
     body {
         background-color: lightblue;
     }
 }
 
 /* Smartphone */
-@media only screen and (max-width: 481px) {
+/* @media only screen and (max-width: 481px) {
     body {
         background-color: green;
     }
+} */
+
+
+
+
+/* iPhone 11 Pro im Hochformat */
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 812px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    /* Füge hier deine spezifischen Anpassungen für das iPhone 11 Pro im Hochformat hinzu */
+
+    body {
+        background-color: pink; /* Beispielhafte Hintergrundfarbe für das iPhone 11 Pro */
+    }
+
+    /* Weitere spezifische Stile hier */
+
+}
+
+/* iPhone 11 Pro im Querformat */
+@media only screen 
+  and (device-width: 812px) 
+  and (device-height: 375px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    /* Füge hier deine spezifischen Anpassungen für das iPhone 11 Pro im Querformat hinzu */
+
+    body {
+        background-color: purple; /* Beispielhafte Hintergrundfarbe für das iPhone 11 Pro im Querformat */
+    }
+
+    /* Weitere spezifische Stile hier */
+
 }

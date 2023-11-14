@@ -598,7 +598,7 @@ footer {
     background-color: var(--pinker-hintergrund);
     color: black;
     padding: 20px 0;
-    margin: 10px 10px 90px 10px;
+    margin: 10px 10px 65px 10px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -778,7 +778,7 @@ footer {
     width: 20px;
 }
 
-.news-element img, .lautstaerke-elemente img {
+.news-element, .lautstaerke-elemente img {
     height: 20px;
     width: 20px; 
     margin-right: 20px;
@@ -792,31 +792,15 @@ footer {
 .album-cover {
     height: 50px;
     width: 50px;
+    margin-right: 20px;
 }
-
-/* Layout des Radio Players
-.layout-radio-player { 
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr); 
-    grid-template-rows: 1fr; 
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
-    }
-    .play { grid-area: 1 / 1 / 2 / 2; } 
-    .pause { grid-area: 1 / 2 / 2 / 3; } 
-    .stop { grid-area: 1 / 3 / 2 / 4; } 
-    .rueckwaerts { grid-area: 1 / 4 / 2 / 5; } 
-    .vorwaerts { grid-area: 1 / 5 / 2 / 6; } 
-
-    .radio-player-container {
-        padding: 20px;
-        background-color: black;
-    } */
 
 .radio-player-container {
     background-color: black;
     color: #F8E7F1;
     padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -845,24 +829,158 @@ footer {
     display: none;
 }
 
-
-
-
-
-
-
-
-
-/* Tablet */
-@media only screen and (max-width: 1024px) {
-    body {
-        background-color: lightblue;
-    }
+/* Play-Button Hover */
+.play-button:hover {
+    cursor: pointer;
 }
+
+/* Pause-Button Hover */
+.pause-button:hover {
+    cursor: pointer;
+}
+
+/* vorspulen-Button Hover */
+.vorspulen-button:hover {
+    cursor: pointer;
+}
+
+/* zurueckspulen-Button Hover */
+.zurueckspulen-button:hover {
+    cursor: pointer;
+}
+
+/* lautstaerke-elemente Hover */
+.lautstaerke-elemente:hover {
+    cursor: pointer;
+}
+
+.x-rechts {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+/* Mobile Version */
+/* Mobile Version */
+/* Mobile Version */
 
 /* Smartphone */
 @media only screen and (max-width: 481px) {
+    /* Globale Stile für mobile Geräte */
+body {
+    font-family: 'Nunito', sans-serif; /* Verwende die Google Font für den Text */
+    margin: 0;
+    padding-left: 10px; /* Linker Abstand */
+    padding-right: 10px; /* Rechter Abstand */
+}
+
+/* Header-Anpassungen für kleine Bildschirme */
+header {
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column; /* Ändere die Anordnung der Navigationselemente auf vertikal */
+}
+
+.x-rechts {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bild-logo {
+    max-width: 100%; /* Sorgt dafür, dass das Logo nicht breiter als der Bildschirm ist */
+}
+
+/* Artikel-Anpassungen für kleine Bildschirme */
+.news-artikel-hintergrund {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Event-Artikel-Anpassungen für kleine Bildschirme */
+.event-beitraege {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-artikel-hintergrund {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Anpassungen für die Slideshow in Event 1 */
+.mySlides {
+    display: none;
+}
+
+/* Footer-Anpassungen für kleine Bildschirme */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 100%; /* Jede Sektion nimmt die volle Breite auf kleinen Bildschirmen ein */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Radio Player-Anpassungen für kleine Bildschirme */
+.radio-player-container {
+    text-align: center;
+}
+
+/* Anpassungen für den "Mehr laden" Button */
+.mehr-laden {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* News-Artikel untereinander machen */
+.news-artikel-hintergrund {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: block; /* Ändere die Anzeige auf 'block', um sicherzustellen, dass Artikel untereinander sind */
+    margin-bottom: 15px; /* Füge etwas Abstand zwischen den Artikeln hinzu */
+}
+
+/* Setze die Flex-Eigenschaft für den Container der News-Artikel zurück (sodass die News-Artikel untereinander sind*/
+section {
+    display: block;
+}
+
+/* dropdown-menu */
+.navigation_container {
+    /* display: none; */
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FA7ACD;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    transform: translateY(-100vh);
+    transition: all 0.4s ease-in;
+display: flex;
+flex-direction: column;
+}
+
+
+}
+
+/* Tablet */
+/* @media only screen and (max-width: 1024px) {
     body {
         background-color: green;
     }
-}
+} */

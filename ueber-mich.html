@@ -19,7 +19,8 @@
         <!-- Logo einbinden (mit Link zur Startseite)-->
         <a href="index.html"><img src="images/logo.png" class="bild-logo"></a>
         <!-- Navigation Bar-->
-        <nav>
+        <nav class="navigation_container">
+            <div class="x-rechts"><img src="images/close.svg" class="whatsapp-front close"></div>
             <ul class="navigation">
                 <li><a href="index.html" class="styling-menu-bar">Home</a></li>
                 <li><a href="news.html" class="styling-menu-bar">News</a></li>
@@ -57,7 +58,11 @@
             <!-- svg (brief) einbinden-->
             <a href="mailto:pink­@radio.ch"><img src="images/brief.svg" class="brief-front"></a>
             <!-- svg (telefon) einbinden-->
-            <a href="https://wa.me/41791771988" target="_blank"><img src="images/whatsapp.svg" class="whatsapp-front"></a>
+            <a href="https://wa.me/41791771988" target="_blank"><img src="images/whatsapp.svg"
+                    class="whatsapp-front"></a>
+            <img src="images/hamburger.svg" class="whatsapp-front hamburger">
+
+
         </div>
     </header>
 
@@ -97,65 +102,67 @@
         </section>
         <!-- Ende Portfolio -->
     </main>
-    <!-- Radio Player -->
-    <div id="radioPlayerContainer">
-        <audio id="radioPlayer" controls>
-            <source src="audio/Altar.mp3" type="audio/mpeg">
-            Dein Browser unterstützt das Audio-Element nicht.
-        </audio>
-    </div>
-
-    <div class="radio-player-container">
-        <div class="news-element"><img src="images/volume.svg"><p>News hören</p></div>
-        <div class="control-elemente">
-            <div class="rueckwaerts">
-                <div onclick="backwardRadio()" class="zurueckspulen-button radio-control"><img
-                        src="images/backward.svg"></div>
-            </div>
-            <div class="play">
-                <div onclick="playRadio()" class="play-button radio-control"><img src="images/play.svg"></div>
-            </div>
-            <div class="pause">
-                <div onclick="pauseRadio()" class="pause-button radio-control"><img src="images/pause.svg"></div>
-            </div>
-            <div class="vorwaerts">
-                <div onclick="forwardRadio()" class="vorspulen-button radio-control"><img src="images/forward.svg">
+        <!-- Radio Player -->
+        <div id="radioPlayerContainer">
+            <audio id="radioPlayer" controls>
+                <source src="audio/Altar.mp3" type="audio/mpeg">
+                Dein Browser unterstützt das Audio-Element nicht.
+            </audio>
+        </div>
+    
+        <div class="radio-player-container">
+            <div class="news-element"><img src="images/gaga.png" class="album-cover"><p><b>Lady Gaga</b> Pokerface</p></div>
+            <div class="control-elemente">
+                <div class="rueckwaerts">
+                    <div onclick="backwardRadio()" class="zurueckspulen-button radio-control"><img
+                            src="images/backward.svg"></div>
+                </div>
+                <div class="play">
+                    <div onclick="playRadio()" class="play-button radio-control"><img src="images/play.svg"></div>
+                </div>
+                <div class="pause">
+                    <div onclick="pauseRadio()" class="pause-button radio-control"><img src="images/pause.svg"></div>
+                </div>
+                <div class="vorwaerts">
+                    <div onclick="forwardRadio()" class="vorspulen-button radio-control"><img src="images/forward.svg">
+                    </div>
                 </div>
             </div>
+            <!-- Lautstärkeregler -->
+            <div class="lautstaerke-elemente"><img src="images/volume.svg"><input type="range" min="0" max="1" step="0.1" value="1" oninput="setVolume(this.value)"></div>
         </div>
-        <!-- Lautstärkeregler -->
-        <div class="lautstaerke-elemente"><img src="images/volume.svg"><input type="range" min="0" max="1" step="0.1" value="1" oninput="setVolume(this.value)"></div>
-    </div>
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra tincidunt nisi, ut finibus lorem
-                luctus ac.</p>
-        </div>
-        <div class="footer-section">
-            <h2>Contact Us</h2>
-            <p>Email: pink@radio.ch</p>
-            <p>Phone: 061 354 78 39</p>
-            <p>Address: Limmatstrasse 21</p>
-            <p>9005 Zürich</p>
-        </div>
-        <!-- Quicklinks -->
-        <div class="footer-section">
-            <h2>Quick Links</h2>
-            <div class="quicklinks">
-                <a href="index.html" class="quicklink1">Home</a>
-                <a href="news.html" class="quicklink2">News</a>
-                <a href="events.html" class="quicklink4">Events</a>
-                <a href="ueber-uns.html" class="quicklink4">Über uns</a>
+        <!-- Ende Radio Player -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra tincidunt nisi, ut finibus lorem
+                        luctus ac.</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Contact Us</h2>
+                    <p>Email: pink@radio.ch</p>
+                    <p>Phone: 061 354 78 39</p>
+                    <p>Address: Limmatstrasse 21</p>
+                    <p>9005 Zürich</p>
+                </div>
+                <!-- Quicklinks -->
+                <div class="footer-section">
+                    <h2>Quick Links</h2>
+                    <div class="quicklinks">
+                        <div class="quicklink1">Home</div>
+                        <div class="quicklink2">News</div>
+                        <div class="quicklink3">Events</div>
+                        <div class="quicklink4">Über uns</div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2023 Pink Radio. All rights reserved.</p>
-    </div>
-</footer>
-<script src="js/script.js"></script>
-<script src="js/ueber-mich.js"></script>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pink Radio. All rights reserved.</p>
+            </div>
+        </footer>
+<!-- <script src="js/script.js"></script>
+<script src="js/ueber-mich.js"></script> -->
+<script src="js/all.js"></script>
 </body>
 </html>
