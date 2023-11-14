@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     setInterval(function () {
         plusSlides(1); // Advance to the next slide
-      }, 3000); // 3000 milliseconds = 3 seconds 
+      }, 10000); // 3000 milliseconds = 3 seconds 
       
 });
 
