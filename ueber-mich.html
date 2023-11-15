@@ -67,71 +67,68 @@
     </header>
 
     <main>
-        <!-- Text Startseite -->
-        <div class="text-startseite">
-            <h1>News</h1>
-            <h2>Hier kommt ein Text zur Hauptseite</h2>
-            <h2>Hier kommt ein Text zur Hauptseite</h2>
-            <h2>Hier kommt ein Text zur Hauptseite</h2>
-        </div>
+
         <!-- Beginn Über mich -->
         <section class="grid-ueber-mich">
             <div class="fakt1">
                 <img src="images/portrait-1.png" alt="Portrait">
             </div>
             <div class="fakt2">
-                <h2>Name</h2>
-                <p>Funktion</p>
+                <h3>Lena Meier</h3>
+                <p>Moderatorin Morgenshow</p>
             </div>
             <div class="fakt3">
-                <h2>Annekdote 1</h2>
-                <p>Text zur Annekdote 1</p>
+                <h3>Meine Lieblingsmusik</h3>
+                <p>Pop - egal ob 80er, 90er oder heute</p>
             </div>
             <div class="fakt4">
-                <h2>Annekdote 1</h2>
-                <p>Text zur Annekdote 1</p>
+                <h3>Mein Lieblingsessen ist...</h3>
+                <p>... definitiv Pasta in jeder erdenklichen Form!</p>
             </div>
             <div class="fakt5">
-                <h2>Annekdote 1</h2>
-                <p>Text zur Annekdote 1</p>
+                <h3>Mein erstes Album</h3>
+                <p>"Abbey Road" von den Beatles</p>
             </div>
-            <div class="fakt6">
-                <h2>Annekdote 1</h2>
+            <!-- <div class="fakt6">
+                <h2>Mein</h2>
                 <p>Text zur Annekdote 1</p>
-            </div>
+            </div> -->
         </section>
         <!-- Ende Portfolio -->
     </main>
         <!-- Radio Player -->
-        <div id="radioPlayerContainer">
-            <audio id="radioPlayer" controls>
-                <source src="audio/Altar.mp3" type="audio/mpeg">
-                Dein Browser unterstützt das Audio-Element nicht.
-            </audio>
+    <div id="radioPlayerContainer">
+        <audio id="radioPlayer" controls>
+            <source src="audio/Altar.mp3" type="audio/mpeg">
+            Dein Browser unterstützt das Audio-Element nicht.
+        </audio>
+    </div>
+
+    <div class="radio-player-container">
+        <div class="news-element"><img src="images/gaga.png" class="album-cover">
+            <p><b>Lady Gaga</b> Pokerface</p>
         </div>
-    
-        <div class="radio-player-container">
-            <div class="news-element"><img src="images/gaga.png" class="album-cover"><p><b>Lady Gaga</b> Pokerface</p></div>
-            <div class="control-elemente">
-                <div class="rueckwaerts">
-                    <div onclick="backwardRadio()" class="zurueckspulen-button radio-control"><img
-                            src="images/backward.svg"></div>
-                </div>
-                <div class="play">
-                    <div onclick="playRadio()" class="play-button radio-control"><img src="images/play.svg"></div>
-                </div>
-                <div class="pause">
-                    <div onclick="pauseRadio()" class="pause-button radio-control"><img src="images/pause.svg"></div>
-                </div>
-                <div class="vorwaerts">
-                    <div onclick="forwardRadio()" class="vorspulen-button radio-control"><img src="images/forward.svg">
-                    </div>
+        <div class="control-elemente">
+            <div class="rueckwaerts">
+                <div class="zurueckspulen-button radio-control"><img
+                        src="images/backward.svg"></div>
+            </div>
+            <div class="play">
+                <div class="play-button radio-control"><img src="images/play.svg"></div>
+            </div>
+            <div class="pause">
+                <div class="pause-button radio-control"><img src="images/pause.svg"></div>
+            </div>
+            <div class="vorwaerts">
+                <div class="vorspulen-button radio-control"><img src="images/forward.svg">
                 </div>
             </div>
-            <!-- Lautstärkeregler -->
-            <div class="lautstaerke-elemente"><img src="images/volume.svg"><input type="range" min="0" max="1" step="0.1" value="1" oninput="setVolume(this.value)"></div>
         </div>
-        <!-- Ende Radio Player -->
+        <!-- Lautstärkeregler -->
+        <div class="lautstaerke-elemente"><img src="images/volume.svg" class="ton-aus"><input type="range" min="0" max="1" step="0.1"
+                value="1" class="range-laustärke"></div>
+    </div>
+    <!-- Ende Radio Player -->
         <footer>
             <div class="footer-content">
                 <div class="footer-section">

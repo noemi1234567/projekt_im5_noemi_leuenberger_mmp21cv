@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
 var radioPlayer = document.getElementById('radioPlayer');
 var playButton = document.querySelector('.play');
 var pauseButton = document.querySelector('.pause');
+var forwardButton = document.querySelector('.vorwaerts');
+var backwardButton = document.querySelector('.rueckwaerts');
+var setVolumeVariable = document.querySelector('.lautstaerke-elemente');
+var volume = document.querySelector('.range-laustärke');
 // var stopButton = document.querySelector('.stop-button'); // Hier füge den Stop-Button hinzu
 
 function playRadio() {
@@ -79,6 +83,29 @@ pauseButton.addEventListener('click', function () {
     pauseRadio();
 });
 
+// Vorwärts-Button klicken
+forwardButton.addEventListener('click', function () {
+    forwardRadio();
+});
+
+// Rückwärts-Button klicken
+backwardButton.addEventListener('click', function () {
+    backwardRadio();
+});
+
+// mute-Bild wenn Regler ganz links
+volume.addEventListener('input', function () {
+    let laustärke = volume.value;
+ if (laustärke == 0) {
+    volumeImage.src = 'images/volume-off.svg'; // Passe den Pfad zum Bild an
+    setVolume(laustärke);
+ } else {
+    volumeImage.src = 'images/volume.svg'; // Passe den Pfad zum Bild an
+    setVolume(laustärke);
+ }
+});
+
+
 // Stop-Button klicken
 // stopButton.addEventListener('click', function () {
 //     stopRadio();
@@ -88,7 +115,7 @@ pauseButton.addEventListener('click', function () {
 // Mute-Bild
 
 // Lautstärke-Element auswählen
-const volumeElement = document.querySelector('.lautstaerke-elemente');
+const volumeElement = document.querySelector('.ton-aus');
 const volumeImage = document.querySelector('.lautstaerke-elemente img');
 
 // Funktion, die den Sound abstellt und das Bild ändert
