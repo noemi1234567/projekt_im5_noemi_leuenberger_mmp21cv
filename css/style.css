@@ -856,6 +856,7 @@ footer {
 
 .x-rechts {
     display: none;
+    cursor: pointer;
 }
 
 .hamburger {
@@ -880,12 +881,24 @@ body {
 
 /* Header-Anpassungen für kleine Bildschirme */
 header {
-    text-align: center;
+    text-align: left;
     grid-template-columns: 1fr 1fr;
 }
 
+.grid-header-mobile { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    }
+    .brief-header-mobile { grid-area: 1 / 1 / 2 / 2; } 
+    .telefon-header-mobile { grid-area: 1 / 2 / 2 / 3; } 
+    .hamburger-header-mobile { grid-area: 1 / 3 / 2 / 4; } 
+
 .hamburger {
     display: flex;
+    cursor: pointer;
 }
 
 .navigation {
@@ -899,7 +912,7 @@ header {
 }
 
 .bild-logo {
-    max-width: 100%; /* Sorgt dafür, dass das Logo nicht breiter als der Bildschirm ist */
+    max-width: 50%; /* Sorgt dafür, dass das Logo nicht breiter als der Bildschirm ist */
 }
 
 /* Artikel-Anpassungen für kleine Bildschirme */
