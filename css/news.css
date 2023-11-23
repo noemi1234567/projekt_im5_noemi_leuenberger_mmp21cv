@@ -25,6 +25,11 @@ h2 {
     line-height: 120%;
 }
 
+.decoration-titel {
+    text-decoration: none;
+    color: black;
+}
+
 h3 {
     font-size: 1.5em;
     ;

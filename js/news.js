@@ -19,19 +19,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const newArticle1 = `
     <article class="news-artikel-hintergrund">
     <img src="images/homeoffice.png" alt="Mann im Home Office" width="280" height="100">
-    <h2 class="titel-hover">Homeoffice: Herausforderungen und Chancen</h2>
+    <a href="artikel.html" class="decoration-titel"><h2 class="titel-hover">Homeoffice: Herausforderungen und Chancen</h2></a>
     <p>Immer mehr Menschen arbeiten von zu Hause aus, was sowohl Chancen als auch Herausforderungen mit sich bringt.</p>
     <a href="artikel.html" class="button">zum Artikel</a>
   </article>
   <article class="news-artikel-hintergrund">
     <img src="images/upcycling.png" alt="Frau zerschneidet Stoff" width="280" height="100">
-    <h2 class="titel-hover">Upcycling: Trend für eine nachhaltige Zukunft</h2>
+    <a href="artikel.html" class="decoration-titel"><h2 class="titel-hover">Upcycling: Trend für eine nachhaltige Zukunft</h2></a>
     <p>Upcycling wird immer beliebter als kreative Möglichkeit, Abfall zu reduzieren und Ressourcen zu schonen.</p>
     <a href="artikel.html" class="button">zum Artikel</a>
   </article>
   <article class="news-artikel-hintergrund">
     <img src="images/flugzeug.png" alt="Flugzeug Turbine" width="280" height="100">
-    <h2 class="titel-hover">Elektrische Flugzeuge: Die Zukunft der Luftfahrt?</h2>
+    <a href="artikel.html" class="decoration-titel"><h2 class="titel-hover">Elektrische Flugzeuge: Die Zukunft der Luftfahrt?</h2></a>
     <p>Elektrische Flugzeuge gewinnen an Popularität und könnten die Luftfahrtbranche revolutionieren.</p>
     <a href="artikel.html" class="button">zum Artikel</a>
   </article>
@@ -41,19 +41,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const newArticle2 = `
         <article class="news-artikel-hintergrund">
         <img src="images/meditation.png" alt="Frau am meditieren" width="280" height="100">
-        <h2 class="titel-hover">Die Macht der Meditation: Stressabbau und innere Ruhe</h2>
+        <a href="artikel.html" class="decoration-titel"><h2 class="titel-hover">Die Macht der Meditation: Stressabbau und innere Ruhe</h2></a>
         <p>Meditation erweist sich als wirksame Methode, um Stress abzubauen und innere Ruhe zu finden.</p>
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
       <article class="news-artikel-hintergrund">
         <img src="images/tiefsee.png" alt="Fisch im dunklen Meer" width="280" height="100">
-        <h2 class="titel-hover">Atlanktik: Neue Entdeckungen und faszinierende Kreaturen</h2>
+        <a href="artikel.html" class="decoration-titel"><h2 class="titel-hover">Atlanktik: Neue Entdeckungen und faszinierende Kreaturen</h2></a>
         <p>Tiefseeforschung enthüllt erstaunliche Welten unter der Wasseroberfläche und faszinierende Lebewesen, die bisher unbekannt waren.</p>
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
       <article class="news-artikel-hintergrund">
         <img src="images/shopping.png" alt="Mann mit Kreditkarte vor dem Laptop" width="280" height="100">
-        <h2 class="titel-hover">Der Boom des Online-Shoppings</h2>
+        <a href="artikel.html" class="decoration-titel"><h2 class="titel-hover">Der Boom des Online-Shoppings</h2></a>
         <p>Der Trend zum Online-Shopping erreicht immer neue Höhen, da Verbraucher bequeme Einkaufsmöglichkeiten von zu Hause aus schätzen.</p>
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>

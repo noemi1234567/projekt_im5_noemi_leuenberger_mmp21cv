@@ -25,6 +25,11 @@ h2 {
     line-height: 120%;
 }
 
+.decoration-titel {
+    text-decoration: none;
+    color: black;
+}
+
 h3 {
     font-size: 1.5em;
     ;
@@ -222,6 +227,7 @@ article {
 /* sobald man über den Button hovert gibt es eine andere Farbe */
 .titel-hover:hover {
     color: white;
+    cursor: pointer;
 }
 
 /* die Bilder werden so nicht verzogen */
@@ -863,7 +869,9 @@ footer {
     display: none;
 }
 
-
+.decoration-email:hover {
+text-decoration: underline;
+}
 
 /* Mobile Version */
 /* Mobile Version */
