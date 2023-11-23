@@ -216,6 +216,7 @@ article {
     /* wenn ich einen sehr grossen button hätte würde es so nicht über den Rand gehen */
     display: inline-block;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 /* sobald man über den Button hovert gibt es eine andere Farbe */
@@ -848,6 +849,10 @@ footer {
 
 /* Pause-Button Hover */
 .pause-button:hover {
+    cursor: pointer;
+}
+
+.ton-aus {
     cursor: pointer;
 }
 

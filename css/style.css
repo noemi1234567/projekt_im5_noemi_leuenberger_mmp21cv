@@ -221,6 +221,7 @@ article {
     /* wenn ich einen sehr grossen button hätte würde es so nicht über den Rand gehen */
     display: inline-block;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 /* sobald man über den Button hovert gibt es eine andere Farbe */
@@ -609,6 +610,7 @@ footer {
     background-color: var(--pinker-hintergrund);
     color: black;
     padding: 20px 0;
+    padding-top: 5px;
     margin: 10px 10px 65px 10px;
     margin-left: 0px;
     margin-right: 0px;
@@ -862,6 +864,10 @@ footer {
 
 /* lautstaerke-elemente Hover */
 .lautstaerke-elemente:hover {
+    cursor: pointer;
+}
+
+.ton-aus {
     cursor: pointer;
 }
 
