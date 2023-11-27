@@ -585,13 +585,17 @@ main {
     border: 1px solid black;
 }
 
-.grid-event {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+.grid-event-neu { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 1fr; 
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
+    grid-row-gap: 0px; 
+    }
+    .grid-event-neu-1 { grid-area: 1 / 1 / 2 / 2; } 
+    .grid-event-neu-2 { grid-area: 1 / 2 / 2 / 3; } 
+    .grid-event-neu-3 { grid-area: 1 / 3 / 2 / 4; } 
+    .grid-event-neu-4 { grid-area: 1 / 4 / 2 / 5; } 
 
 .ort {
     grid-area: 1 / 1 / 2 / 2;
@@ -1015,8 +1019,11 @@ flex-direction: column;
 }
 
 /* Tablet */
-/* @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     body {
-        background-color: green;
+        font-family: 'Nunito', sans-serif; /* Verwende die Google Font für den Text */
+        margin: 0;
+        padding-left: 10px; /* Linker Abstand */
+        padding-right: 10px; /* Rechter Abstand */
     }
-} */
+}
