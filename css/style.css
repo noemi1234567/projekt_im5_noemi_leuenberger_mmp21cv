@@ -35,6 +35,10 @@ h2 {
     color: white;
 }
 
+.titel-slideshow {
+white-space: nowrap;
+}
+
 h3 {
     font-size: 1.5em;
     ;
@@ -902,6 +906,12 @@ footer {
 text-decoration: underline;
 }
 
+.event-schrift2-design {
+    display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /* Mobile Version */
 /* Mobile Version */
 /* Mobile Version */
@@ -920,6 +930,34 @@ body {
 header {
     text-align: left;
     grid-template-columns: 1fr 1fr;
+}
+
+.styling-main-morgenshow {
+    text-align: center;
+}
+
+
+.grid-ueber-mich {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Schriftgrösse */
+h1 {
+    font-size: 2.5em;
+}
+
+.styling-event-text {
+    text-align: center;
+}
+
+.breite-artikel-text {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: 170%;
+    text-align: center;
 }
 
     /* Neues CSS für das mobile Layout der Bilder */

@@ -1,3 +1,7 @@
+/* Styling generell */
+/* Styling generell */
+/* Styling generell */
+
 /* Variable für Farbe definieren */
 :root {
     --pinker-hintergrund: #FA7ACD;
@@ -7,7 +11,6 @@
     margin: 0;
     padding: 0;
 }
-
 
 /* Hintergrundfarbe */
 body {
@@ -38,6 +41,9 @@ h3 {
 p {
     font-size: 1em;
 }
+
+/* Ende Styling generell */
+/* Ende Styling generell */
 
 /* Styling Navigation Bar */
 /* Styling Navigation Bar */
@@ -85,6 +91,10 @@ li a:hover {
 .styling-menu-bar {
     font-size: 1.2em;
 }
+
+/* Styling Icons */
+/* Styling Icons */
+/* Styling Icons */
 
 /* Logo-Gestaltung in der Navigation */
 .bild-logo {
@@ -174,6 +184,8 @@ li a:hover {
 }
 
 /* Gestaltung header */
+/* Gestaltung header */
+/* Gestaltung header */
 header {
     /*position: fixed;*/
     top: 0;
@@ -205,6 +217,10 @@ article {
 }
 
 
+/* Gestaltung Buttons */
+/* Gestaltung Buttons */
+/* Gestaltung Buttons */
+
 /* Buttons "zum Artikel */
 .button {
     text-decoration: none;
@@ -229,6 +245,10 @@ article {
 .titel-hover:hover {
     color: white;
 }
+
+/* Styling Newsbeiträge */
+/* Styling Newsbeiträge */
+/* Styling Newsbeiträge */
 
 /* die Bilder werden so nicht verzogen */
 img {
@@ -257,6 +277,10 @@ main {
     justify-content: center;
 }
 
+/* Styling Eventbeiträge */
+/* Styling Eventbeiträge */
+/* Styling Eventbeiträge */
+
 /* Grid für die Event-Beiträge auf der Startseite */
 .event-beitraege {
     display: grid;
@@ -279,6 +303,10 @@ main {
 .artikel-4 {
     grid-area: 2 / 3 / 3 / 4;
 }
+
+/* Styling Über uns Seite */
+/* Styling Über uns Seite */
+/* Styling Über uns Seite */
 
 /* beim hovern über das Bild soll ein anderes Bild (mit der roten Nase) erscheinen */
 .rote-nase-hovern {
@@ -888,23 +916,6 @@ footer {
 
 
 
-
-
-
-
-/* Tablet */
-/* @media only screen and (max-width: 1024px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-/* Smartphone */
-/* @media only screen and (max-width: 481px) {
-    body {
-        background-color: green;
-    }
-} */
 
 
 
