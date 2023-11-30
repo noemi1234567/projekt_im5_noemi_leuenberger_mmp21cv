@@ -91,6 +91,78 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+// Radio Player
+var radioPlayerNews = document.getElementById('radioPlayerNews');
+var playButtonNews = document.querySelector('.playNews');
+var pauseButtonNews = document.querySelector('.pauseNews');
+var forwardButtonNews = document.querySelector('.vorwaertsNews');
+var backwardButtonNews = document.querySelector('.rueckwaertsNews');
+var setVolumeVariableNews = document.querySelector('.lautstaerke-elementeNews');
+var volumeNews = document.querySelector('.range-laustärkeNews');
+// var stopButton = document.querySelector('.stop-button'); // Hier füge den Stop-Button hinzu
+
+function playRadio() {
+    playButtonNews.style.display = "none";
+    pauseButtonNews.style.display = "block";
+    radioPlayerNews.play();
+}
+
+function pauseRadio() {
+    playButtonNews.style.display = "block";
+    pauseButtonNews.style.display = "none";
+    radioPlayerNews.pause();
+}
+
+function stopRadio() {
+    radioPlayerNews.pause();
+    radioPlayerNews.currentTime = 0;
+}
+
+function forwardRadio() {
+    radioPlayerNews.currentTime += 10; // Vorwärts spulen um 10 Sekunden (kann angepasst werden)
+}
+
+function backwardRadio() {
+    radioPlayerNews.currentTime -= 10; // Rückwärts spulen um 10 Sekunden (kann angepasst werden)
+}
+
+function setVolume(volume) {
+    radioPlayerNews.volume = volume; // Volume-Wert zwischen 0 und 1 setzen
+}
+
+// Play-Button klicken
+playButtonNews.addEventListener('click', function () {
+    playRadio();
+});
+
+// Pause-Button klicken
+pauseButtonNews.addEventListener('click', function () {
+    pauseRadio();
+});
+
+// Vorwärts-Button klicken
+forwardButtonNews.addEventListener('click', function () {
+    forwardRadio();
+});
+
+// Rückwärts-Button klicken
+backwardButtonNews.addEventListener('click', function () {
+    backwardRadio();
+});
+
+// mute-Bild wenn Regler ganz links
+volumeNews.addEventListener('input', function () {
+    let laustärke = volumeNews.value;
+ if (laustärke == 0) {
+    volumeImage.src = 'images/volume-off.svg'; // Passe den Pfad zum Bild an
+    setVolume(laustärke);
+ } else {
+    volumeImage.src = 'images/volume.svg'; // Passe den Pfad zum Bild an
+    setVolume(laustärke);
+ }
+});
+
 // // JavaScript für die Steuerung des Radioplayers
 // var radioPlayer = document.getElementById('radioPlayer');
 // var playButton = document.querySelector('.play')

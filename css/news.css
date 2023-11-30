@@ -842,6 +842,10 @@ footer {
     display: none;
 }
 
+.pauseNews {
+    display: none;
+}
+
 /* Play-Button Hover */
 .play-button:hover {
     cursor: pointer;

@@ -72,35 +72,35 @@
 
         <!-- Radio Player -->
     <div id="radioPlayerContainer">
-        <audio id="radioPlayer" controls>
-            <source src="audio/Altar.mp3" type="audio/mpeg">
+        <audio id="radioPlayerNews" controls>
+            <source src="audio/news.mp3" type="audio/mpeg">
             Dein Browser unterstützt das Audio-Element nicht.
         </audio>
     </div>
 
     <div class="radio-player-container">
         <div class="news-element"><img src="images/gaga.png" class="album-cover">
-            <p><b>Lady Gaga</b> Pokerface</p>
+            <p class="styling-radioplayer-mobile"><b>Lady Gaga</b> Pokerface</p>
         </div>
         <div class="control-elemente">
-            <div class="rueckwaerts">
+            <div class="rueckwaertsNews">
                 <div class="zurueckspulen-button radio-control"><img
                         src="images/backward.svg"></div>
             </div>
-            <div class="play">
+            <div class="playNews">
                 <div class="play-button radio-control"><img src="images/play.svg"></div>
             </div>
-            <div class="pause">
+            <div class="pauseNews">
                 <div class="pause-button radio-control"><img src="images/pause.svg"></div>
             </div>
-            <div class="vorwaerts">
+            <div class="vorwaertsNews">
                 <div class="vorspulen-button radio-control"><img src="images/forward.svg">
                 </div>
             </div>
         </div>
         <!-- Lautstärkeregler -->
-        <div class="lautstaerke-elemente"><img src="images/volume.svg" class="ton-aus"><input type="range" min="0" max="1" step="0.1"
-                value="1" class="range-laustärke"></div>
+        <div class="lautstaerke-elementeNews"><img src="images/volume.svg" class="ton-aus"><input type="range" min="0" max="1" step="0.1"
+                value="1" class="range-laustärkeNews"></div>
     </div>
     <!-- Ende Radio Player -->
 
@@ -190,17 +190,17 @@
         <div class="news-element"><img src="images/gaga.png" class="album-cover"><p><b>Lady Gaga</b> Pokerface</p></div>
         <div class="control-elemente">
             <div class="rueckwaerts">
-                <div onclick="backwardRadio()" class="zurueckspulen-button radio-control"><img
+                <div class="zurueckspulen-button radio-control"><img
                         src="images/backward.svg"></div>
             </div>
             <div class="play">
-                <div onclick="playRadio()" class="play-button radio-control"><img src="images/play.svg"></div>
+                <div class="play-button radio-control"><img src="images/play.svg"></div>
             </div>
             <div class="pause">
-                <div onclick="pauseRadio()" class="pause-button radio-control"><img src="images/pause.svg"></div>
+                <div class="pause-button radio-control"><img src="images/pause.svg"></div>
             </div>
             <div class="vorwaerts">
-                <div onclick="forwardRadio()" class="vorspulen-button radio-control"><img src="images/forward.svg">
+                <div class="vorspulen-button radio-control"><img src="images/forward.svg">
                 </div>
             </div>
         </div>
@@ -243,6 +243,7 @@
     </footer>
     <!-- <script src="js/news.js"></script> -->
     <script src="js/all.js"></script>
+    <script src="js/news.js"></script>
 </body>
 
 </html>

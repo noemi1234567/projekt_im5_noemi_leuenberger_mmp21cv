@@ -41,7 +41,7 @@ h3 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 /* Styling Navigation Bar */
@@ -207,6 +207,18 @@ article {
 /* Hintergrund der News-Artikel (die pinken Kacheln) */
 .news-artikel-hintergrund {
     background-color: var(--pinker-hintergrund);
+}
+
+/* Abstand Titelbild und Titel */
+.titel-artikel {
+    margin-top: 20px;
+}
+
+.breite-artikel-text {
+    max-width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 170%;
 }
 
 
@@ -793,6 +805,7 @@ footer {
 .radio-control img {
     height: 20px;
     width: 20px;
+    cursor: pointer;
 }
 
 .news-element, .lautstaerke-elemente img {
@@ -908,6 +921,87 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 
+.news-element, .lautstaerke-elemente img {
+    height: auto;
+}
+
+.styling-radioplayer-mobile {
+    text-align: left;
+}
+
+.dropdown .dropdown-content {
+    display: block;
+    position: relative;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.lautstaerke-elemente {
+    display: none;
+}
+
+.footer-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center; /* Zentriere den Text */
+    margin-bottom: 15px; /* Füge etwas Abstand zwischen den Abschnitten hinzu */
+}
+
+.quicklinks {
+    display: flex;
+    flex-wrap: wrap; /* Neue Zeile für kleinere Bildschirme */
+    justify-content: center; /* Zentriere die Quicklinks horizontal */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.brief-front {
+    padding-left: 0px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Caption text */
+.text {
+    padding: 8px 30px;
+}
+
+/* Event-Artikel-Anpassungen für kleine Bildschirme */
+.event-schrift {
+    display: flex;
+    flex-direction: column; /* Ändere die Anordnung der Elemente auf vertikal */
+    align-items: flex-start; /* Ausrichtung der Elemente am Anfang des Containers */
+}
+
+.event-schrift2,
+.event-schrift3,
+.event-schrift4 {
+    width: 100%; /* Fülle die volle Breite des Containers */
+    box-sizing: border-box;
+    padding: 5px; /* Füge etwas Abstand zwischen den Elementen hinzu */
+}
+
+
+.text-slideshow {
+    display: none;
+}
+
+.titel-slideshow {
+    font-size: 0.8em;
+}
+
+/* Style the dropdown button */
+.dropdown .dropbtn {
+    display: block;
+    cursor: pointer;
+}
+
 .grid-header-mobile { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
@@ -995,7 +1089,7 @@ header {
 }
 
 /* Setze die Flex-Eigenschaft für den Container der News-Artikel zurück (sodass die News-Artikel untereinander sind*/
-section {
+section, #additional-articles {
     display: block;
 }
 
