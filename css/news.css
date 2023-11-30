@@ -787,6 +787,15 @@ footer {
     width: 20px; 
     margin-right: 20px;
 }
+.lautstaerke-elementeNews{
+    width: 100%;
+  max-width: 200px;
+}
+.lautstaerke-elementeNews img {
+    height: 20px;
+    width: 20px; 
+    margin-right: 20px;
+}
 
 .news-element {
     display: flex;
@@ -829,6 +838,12 @@ footer {
     width: 100%;
     max-width: 200px;
 }
+
+.lautstaerke-elemente {
+    width: 100%;
+    max-width: 200px;
+}
+
 
 .control-elemente {
     width: 100%;
@@ -908,6 +923,11 @@ body {
 header {
     text-align: center;
     grid-template-columns: 1fr 1fr;
+}
+
+.lautstaerke-elementeNews,
+.lautstaerke-elemente{
+    display: none;
 }
 
 .grid-header-mobile { 
