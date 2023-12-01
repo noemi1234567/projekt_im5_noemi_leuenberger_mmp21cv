@@ -932,6 +932,10 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 
+.control-elemente {
+align-items: center;
+}
+
 .styling-main-morgenshow {
     text-align: center;
 }
@@ -986,14 +990,12 @@ li a:hover {
     color: black;
 }
 
-/* Formatierung, dass die Elemente linksbündig sind*/
 .formatierung-dropdown {
     text-align: center;
     padding: 0px;
     font-size: 0.8em;
 }
 
-/* Formatierung, dass die Elemente linksbündig sind*/
 .dropdown .dropdown-section a {
     padding: 0px;
 }
@@ -1233,4 +1235,11 @@ flex-direction: column;
         padding-left: 10px; /* Linker Abstand */
         padding-right: 10px; /* Rechter Abstand */
     }
+
+    
+
+    
+
+
 }
+
