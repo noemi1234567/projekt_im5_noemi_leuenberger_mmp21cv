@@ -907,6 +907,7 @@ footer {
 .lautstaerke-elemente {
     width: 100%;
     max-width: 200px;
+    display: flex;
 }
 
 .control-elemente {
@@ -949,6 +950,8 @@ footer {
 .ton-aus {
     cursor: pointer;
 }
+
+
 
 /* STYLING MENU MOBILE */
 /* STYLING MENU MOBILE */
@@ -1204,7 +1207,7 @@ footer {
     }
 
       /* Footer-Anpassungen für kleine Bildschirme */
-      .footer-content {
+    .footer-content {
         display: flex;
         flex-wrap: wrap;
     }
