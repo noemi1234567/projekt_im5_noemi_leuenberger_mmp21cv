@@ -1206,7 +1206,7 @@ footer {
         margin-top: 20px;
     }
 
-      /* Footer-Anpassungen für kleine Bildschirme */
+    /* Footer-Anpassungen für kleine Bildschirme */
     .footer-content {
         display: flex;
         flex-wrap: wrap;
@@ -1366,4 +1366,6 @@ footer {
         padding-right: 10px;
         /* Rechter Abstand */
     }
+
+
 }

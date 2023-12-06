@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const dropdownButton = document.querySelector(".dropdown .dropbtn");
     const dropdownContent = document.querySelector(".dropdown .dropdown-content");
 
-    dropdownButton.addEventListener("click", function() {
+    dropdownButton.addEventListener("click", function () {
         dropdownContent.classList.toggle("show");
     });
 
     // Close the dropdown if the user clicks outside of it
-    window.addEventListener("click", function(event) {
+    window.addEventListener("click", function (event) {
         if (!event.target.matches(".dropdown .dropbtn")) {
             if (dropdownContent.classList.contains("show")) {
                 dropdownContent.classList.remove("show");
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
   </article>
     `;
 
-        // das sind alle Artikel von der Gruppe Article2
+    // das sind alle Artikel von der Gruppe Article2
     const newArticle2 = `
         <article class="news-artikel-hintergrund">
         <img src="images/meditation.png" alt="Frau am meditieren" width="280" height="100">
@@ -58,14 +58,14 @@ document.addEventListener("DOMContentLoaded", function() {
         <a href="artikel.html" class="button">zum Artikel</a>
       </article>
         `;
-    
+
 
     // Funktion macht, dass die Artikel1 geladen werden 
     function loadMoreArticles(newArticle) {
-    
+
         // Get the container for additional articles
         const additionalArticlesContainer = document.getElementById("additional-articles");
-    
+
         // Add the new article to the container
         additionalArticlesContainer.insertAdjacentHTML('beforeend', newArticle);
     }
@@ -76,10 +76,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let clickCount = 0;
 
-    loadMoreButton.addEventListener('click', function() {
+    loadMoreButton.addEventListener('click', function () {
         clickCount++;
         // wenn der User einmal klickt, dann werden die Artikel1 geladen
-        if(clickCount === 1){
+        if (clickCount === 1) {
             loadMoreArticles(newArticle1);
             // loadMoreButton.addEventListener("click", loadMoreArticles1);
         }
@@ -154,191 +154,12 @@ backwardButtonNews.addEventListener('click', function () {
 // mute-Bild wenn Regler ganz links
 volumeNews.addEventListener('input', function () {
     let laustärke = volumeNews.value;
- if (laustärke == 0) {
-    volumeImage.src = 'images/volume-off.svg'; // Passe den Pfad zum Bild an
-    setVolume(laustärke);
- } else {
-    volumeImage.src = 'images/volume.svg'; // Passe den Pfad zum Bild an
-    setVolume(laustärke);
- }
+    if (laustärke == 0) {
+        volumeImage.src = 'images/volume-off.svg'; // Passe den Pfad zum Bild an
+        setVolume(laustärke);
+    } else {
+        volumeImage.src = 'images/volume.svg'; // Passe den Pfad zum Bild an
+        setVolume(laustärke);
+    }
 });
 
-// // JavaScript für die Steuerung des Radioplayers
-// var radioPlayer = document.getElementById('radioPlayer');
-// var playButton = document.querySelector('.play')
-// var pauseButton = document.querySelector('.pause')
-
-// function playRadio() {
-//     playButton.style.display = "none";
-//     pauseButton.style.display = "block";
-//     radioPlayer.play();
-// }
-
-// function pauseRadio() {
-//     playButton.style.display = "block";
-//     pauseButton.style.display = "none";
-//     radioPlayer.pause();
-// }
-
-// function forwardRadio() {
-//     radioPlayer.currentTime += 10; // Vorwärts spulen um 10 Sekunden (kann angepasst werden)
-// }
-
-// function backwardRadio() {
-//     radioPlayer.currentTime -= 10; // Rückwärts spulen um 10 Sekunden (kann angepasst werden)
-// }
-
-// function setVolume(volume) {
-//     radioPlayer.volume = volume; // Volume-Wert zwischen 0 und 1 setzen
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     // ... (dein bestehender Code)
-
-// // Radio Player
-// var radioPlayer = document.getElementById('radioPlayer');
-// var playButton = document.querySelector('.play-button');
-// var pauseButton = document.querySelector('.pause-button');
-// var stopButton = document.querySelector('.stop-button'); // Hier füge den Stop-Button hinzu
-
-// function playRadio() {
-//     radioPlayer.play();
-// }
-
-// function pauseRadio() {
-//     radioPlayer.pause();
-// }
-
-// function stopRadio() {
-//     radioPlayer.pause();
-//     radioPlayer.currentTime = 0;
-// }
-
-// function forwardRadio() {
-//     radioPlayer.currentTime += 10; // Vorwärts spulen um 10 Sekunden (kann angepasst werden)
-// }
-
-// function backwardRadio() {
-//     radioPlayer.currentTime -= 10; // Rückwärts spulen um 10 Sekunden (kann angepasst werden)
-// }
-
-// function setVolume(volume) {
-//     radioPlayer.volume = volume; // Volume-Wert zwischen 0 und 1 setzen
-// }
-
-// // Play-Button klicken
-// playButton.addEventListener('click', function () {
-//     playRadio();
-// });
-
-// // Pause-Button klicken
-// pauseButton.addEventListener('click', function () {
-//     pauseRadio();
-// });
-
-// // Stop-Button klicken
-// stopButton.addEventListener('click', function () {
-//     stopRadio();
-// });
-// });
-
-// // JavaScript für die Steuerung des Radioplayers
-// var radioPlayer = document.getElementById('radioPlayer');
-// var playButton = document.querySelector('.play')
-// var pauseButton = document.querySelector('.pause')
-
-// function playRadio() {
-//     playButton.style.display = "none";
-//     pauseButton.style.display = "block";
-//     radioPlayer.play();
-// }
-
-// function pauseRadio() {
-//     playButton.style.display = "block";
-//     pauseButton.style.display = "none";
-//     radioPlayer.pause();
-// }
-
-// function forwardRadio() {
-//     radioPlayer.currentTime += 10; // Vorwärts spulen um 10 Sekunden (kann angepasst werden)
-// }
-
-// function backwardRadio() {
-//     radioPlayer.currentTime -= 10; // Rückwärts spulen um 10 Sekunden (kann angepasst werden)
-// }
-
-// function setVolume(volume) {
-//     radioPlayer.volume = volume; // Volume-Wert zwischen 0 und 1 setzen
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     // ... (dein bestehender Code)
-
-// // Radio Player
-// var radioPlayer = document.getElementById('radioPlayer');
-// var playButton = document.querySelector('.play-button');
-// var pauseButton = document.querySelector('.pause-button');
-// var stopButton = document.querySelector('.stop-button'); // Hier füge den Stop-Button hinzu
-
-// function playRadio() {
-//     radioPlayer.play();
-// }
-
-// function pauseRadio() {
-//     radioPlayer.pause();
-// }
-
-// function stopRadio() {
-//     radioPlayer.pause();
-//     radioPlayer.currentTime = 0;
-// }
-
-// function forwardRadio() {
-//     radioPlayer.currentTime += 10; // Vorwärts spulen um 10 Sekunden (kann angepasst werden)
-// }
-
-// function backwardRadio() {
-//     radioPlayer.currentTime -= 10; // Rückwärts spulen um 10 Sekunden (kann angepasst werden)
-// }
-
-// function setVolume(volume) {
-//     radioPlayer.volume = volume; // Volume-Wert zwischen 0 und 1 setzen
-// }
-
-// // Play-Button klicken
-// playButton.addEventListener('click', function () {
-//     playRadio();
-// });
-
-// // Pause-Button klicken
-// pauseButton.addEventListener('click', function () {
-//     pauseRadio();
-// });
-
-// // Stop-Button klicken
-// stopButton.addEventListener('click', function () {
-//     stopRadio();
-// });
-// });
-
-// // Mute-Bild
-
-// // Lautstärke-Element auswählen
-// const volumeElement = document.querySelector('.lautstaerke-elemente');
-// const volumeImage = document.querySelector('.lautstaerke-elemente img');
-
-// // Funktion, die den Sound abstellt und das Bild ändert
-// function toggleSoundAndImage() {
-//     const radioPlayer = document.getElementById('radioPlayer');
-//     radioPlayer.muted = !radioPlayer.muted;
-
-//     // Bild ändern basierend auf dem stummen Zustand
-//     if (radioPlayer.muted) {
-//         volumeImage.src = 'images/volume-off.svg'; // Passe den Pfad zum Bild an
-//     } else {
-//         volumeImage.src = 'images/volume.svg'; // Passe den Pfad zum Bild an
-//     }
-// }
-
-// // Eventlistener hinzufügen
-// volumeElement.addEventListener('click', toggleSoundAndImage);

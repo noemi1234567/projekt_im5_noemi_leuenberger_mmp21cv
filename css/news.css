@@ -2,9 +2,7 @@
 /* STYLING RADIO PLAYER NEWS*/
 /* STYLING RADIO PLAYER NEWS*/
 
-#radioPlayerContainerNews {
-    
-}
+#radioPlayerContainerNews {}
 
 #radioPlayerNews {
     width: 100%;
@@ -18,18 +16,21 @@
     cursor: pointer;
 }
 
-.news-element img, .lautstaerke-elemente img {
+.news-element img,
+.lautstaerke-elemente img {
     height: 20px;
-    width: 20px; 
+    width: 20px;
     margin-right: 20px;
 }
-.lautstaerke-elementeNews{
+
+.lautstaerke-elementeNews {
     width: 100%;
-  max-width: 200px;
+    max-width: 200px;
 }
+
 .lautstaerke-elementeNews img {
     height: 20px;
-    width: 20px; 
+    width: 20px;
     margin-right: 20px;
 }
 
@@ -53,23 +54,23 @@
     align-items: center;
     } */
 
-    /* vom Browser standartisert gestylter Container soll weg */
-    #radioPlayerNews {
-        display: none;
-    }
+/* vom Browser standartisert gestylter Container soll weg */
+#radioPlayerNews {
+    display: none;
+}
 
-    .radio-player-container-news {
-        background-color: black;
-        color: white;
-        padding: 20px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.radio-player-container-news {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-    
+
 
 .news-element,
 .lautstaerke-elemente {
@@ -131,7 +132,7 @@
     /* Globale Stile für mobile Geräte */
 
 
-/* .control-elemente {
+    /* .control-elemente {
     align-items: center;
     } */
 
@@ -143,7 +144,7 @@
         font-size: 0.8em;
     }
 
-/* .radio-player-container {
+    /* .radio-player-container {
     padding-top: 10px;
     padding-bottom: 5px;
     padding-left: 5px;
@@ -151,20 +152,20 @@
     font-size: 0.8em;
 } */
 
-.styling-news-schrift-gaga {
-    text-align: left;
-}
+    .styling-news-schrift-gaga {
+        text-align: left;
+    }
 
-.lautstaerke-elementeNews,
-.lautstaerke-elemente{
-    display: none;
-}
+    .lautstaerke-elementeNews,
+    .lautstaerke-elemente {
+        display: none;
+    }
 
 
-/* Radio Player-Anpassungen für kleine Bildschirme */
-.radio-player-container {
-    text-align: center;
-}
+    /* Radio Player-Anpassungen für kleine Bildschirme */
+    .radio-player-container {
+        text-align: center;
+    }
 }
 
 
