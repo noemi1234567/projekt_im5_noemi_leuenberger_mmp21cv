@@ -889,7 +889,7 @@ footer {
 
 .radio-player-container {
     background-color: black;
-    color: #F8E7F1;
+    color: white;
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;
@@ -990,13 +990,16 @@ footer {
 
     .control-elemente {
         align-items: center;
+        width: 50%;
     }
 
     .styling-main-morgenshow {
         text-align: center;
     }
 
-
+/* ÜBER MICH SEITE */
+/* ÜBER MICH SEITE */
+/* ÜBER MICH SEITE */
     .grid-ueber-mich {
         display: flex;
         flex-direction: column;
@@ -1321,10 +1324,4 @@ footer {
         padding-right: 10px;
         /* Rechter Abstand */
     }
-
-
-
-
-
-
 }
