@@ -982,6 +982,11 @@ footer {
         /* Rechter Abstand */
     }
 
+    /* Schriftgrösse */
+    h1 {
+        font-size: 2.5em;
+    }
+
     /* Header-Anpassungen für kleine Bildschirme */
     header {
         text-align: left;
@@ -997,24 +1002,26 @@ footer {
         text-align: center;
     }
 
-/* ÜBER MICH SEITE */
-/* ÜBER MICH SEITE */
-/* ÜBER MICH SEITE */
+    /* ÜBER MICH SEITE */
+    /* ÜBER MICH SEITE */
+    /* ÜBER MICH SEITE */
     .grid-ueber-mich {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    /* Schriftgrösse */
-    h1 {
-        font-size: 2.5em;
-    }
+    /* EVENT SEITE */
+    /* EVENT SEITE */
+    /* EVENT SEITE */
 
     .styling-event-text {
         text-align: center;
     }
 
+    /* STYLING ARTIKEL */
+    /* STYLING ARTIKEL */
+    /* STYLING ARTIKEL */
     .breite-artikel-text {
         max-width: 100%;
         padding-left: 0px;
@@ -1022,6 +1029,11 @@ footer {
         line-height: 170%;
         text-align: center;
     }
+
+
+    /* MORGENSHOW SEITE */
+    /* MORGENSHOW SEITE */
+    /* MORGENSHOW SEITE */
 
     /* Neues CSS für das mobile Layout der Bilder */
     .moderatoren-morgenshow {
@@ -1037,6 +1049,10 @@ footer {
         margin-bottom: 10px;
         /* Abstand zwischen den Bildern */
     }
+
+    /* STYLING MENU (inkl. Dopdown */
+    /* STYLING MENU (inkl. Dopdown */
+    /* STYLING MENU (inkl. Dopdown */
 
     .styling-menu-bar {
         font-size: 1.5em;
@@ -1079,24 +1095,6 @@ footer {
         border: 1px solid transparent;
     }
 
-    .radio-player-container {
-        padding-top: 10px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: 0.8em;
-    }
-
-    .news-element,
-    .lautstaerke-elemente img {
-        height: auto;
-    }
-
-    .styling-radioplayer-mobile {
-        text-align: left;
-        align-items: center;
-    }
-
     .dropdown .dropdown-content {
         display: block;
         position: relative;
@@ -1106,80 +1104,11 @@ footer {
         z-index: 0;
     }
 
-    .lautstaerke-elemente {
-        display: none;
-    }
-
-    .footer-section {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 10px;
-        text-align: center;
-        /* Zentriere den Text */
-        margin-bottom: 15px;
-        /* Füge etwas Abstand zwischen den Abschnitten hinzu */
-    }
-
-    .quicklinks {
-        display: flex;
-        flex-wrap: wrap;
-        /* Neue Zeile für kleinere Bildschirme */
-        justify-content: center;
-        /* Zentriere die Quicklinks horizontal */
-    }
-
-    .footer-bottom {
-        margin-top: 20px;
-    }
-
     .brief-front {
         padding-left: 0px;
         padding-right: 5px;
         padding-top: 5px;
         padding-bottom: 5px;
-    }
-
-    /* Caption text */
-    .text {
-        padding: 8px 30px;
-    }
-
-    /* Event-Artikel-Anpassungen für kleine Bildschirme */
-    .event-schrift {
-        display: flex;
-        flex-direction: column;
-        /* Ändere die Anordnung der Elemente auf vertikal */
-        align-items: flex-start;
-        /* Ausrichtung der Elemente am Anfang des Containers */
-    }
-
-    .event-schrift2,
-    .event-schrift3,
-    .event-schrift4 {
-        width: 100%;
-        /* Fülle die volle Breite des Containers */
-        box-sizing: border-box;
-        padding: 5px;
-        /* Füge etwas Abstand zwischen den Elementen hinzu */
-    }
-
-    .event-schrift2-design {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding-left: 40px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 5px;
-    }
-
-
-    .text-slideshow {
-        display: none;
-    }
-
-    .titel-slideshow {
-        font-size: 0.8em;
     }
 
     /* Style the dropdown button */
@@ -1229,6 +1158,128 @@ footer {
         /* Sorgt dafür, dass das Logo nicht breiter als der Bildschirm ist */
     }
 
+
+    /* STYLING RADIO PLAYER */
+    /* STYLING RADIO PLAYER */
+    /* STYLING RADIO PLAYER */
+
+    .radio-player-container {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 0.8em;
+    }
+
+    .news-element,
+    .lautstaerke-elemente img {
+        height: auto;
+    }
+
+    .styling-radioplayer-mobile {
+        text-align: left;
+        align-items: center;
+    }
+
+    .lautstaerke-elemente {
+        display: none;
+    }
+
+
+    /* STYLING FOOTER */
+    /* STYLING FOOTER */
+    /* STYLING FOOTER */
+    .footer-section {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        /* Zentriere den Text */
+        margin-bottom: 15px;
+        /* Füge etwas Abstand zwischen den Abschnitten hinzu */
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+
+      /* Footer-Anpassungen für kleine Bildschirme */
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        /* Jede Sektion nimmt die volle Breite auf kleinen Bildschirmen ein */
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+
+    /* STYLING Quicklinks */
+    /* STYLING Quicklinks */
+    /* STYLING Quicklinks */
+
+    .quicklinks {
+        display: flex;
+        flex-wrap: wrap;
+        /* Neue Zeile für kleinere Bildschirme */
+        justify-content: center;
+        /* Zentriere die Quicklinks horizontal */
+    }
+
+    /* Caption text */
+    .text {
+        padding: 8px 30px;
+    }
+
+
+    /* STYLING EVENT SEITE */
+    /* STYLING EVENT SEITE */
+    /* STYLING EVENT SEITE */
+
+    /* Event-Artikel-Anpassungen für kleine Bildschirme */
+    .event-schrift {
+        display: flex;
+        flex-direction: column;
+        /* Ändere die Anordnung der Elemente auf vertikal */
+        align-items: flex-start;
+        /* Ausrichtung der Elemente am Anfang des Containers */
+    }
+
+    .event-schrift2,
+    .event-schrift3,
+    .event-schrift4 {
+        width: 100%;
+        /* Fülle die volle Breite des Containers */
+        box-sizing: border-box;
+        padding: 5px;
+        /* Füge etwas Abstand zwischen den Elementen hinzu */
+    }
+
+    .event-schrift2-design {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-left: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+
+    /* STYLING STARTSEITE */
+    /* STYLING STARTSEITE */
+    /* STYLING STARTSEITE */
+
+    .text-slideshow {
+        display: none;
+    }
+
+    .titel-slideshow {
+        font-size: 0.8em;
+    }
+
     /* Artikel-Anpassungen für kleine Bildschirme */
     .news-artikel-hintergrund {
         width: 100%;
@@ -1253,18 +1304,6 @@ footer {
         display: none;
     }
 
-    /* Footer-Anpassungen für kleine Bildschirme */
-    .footer-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .footer-section {
-        flex: 1 1 100%;
-        /* Jede Sektion nimmt die volle Breite auf kleinen Bildschirmen ein */
-        box-sizing: border-box;
-        padding: 10px;
-    }
 
     /* Radio Player-Anpassungen für kleine Bildschirme */
     .radio-player-container {
