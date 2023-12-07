@@ -1,3 +1,4 @@
+// Dropdown Menu Desktop
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownButton = document.querySelector(".dropdown .dropbtn");
     const dropdownContent = document.querySelector(".dropdown .dropdown-content");

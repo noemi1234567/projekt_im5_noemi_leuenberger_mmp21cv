@@ -44,16 +44,6 @@
     color: white;
 }
 
-/* .album-cover {
-    height: 50px;
-    width: 50px;
-    margin-right: 20px;
-}
-
-.control-elemente {
-    align-items: center;
-    } */
-
 /* vom Browser standartisert gestylter Container soll weg */
 #radioPlayerNews {
     display: none;
@@ -70,8 +60,6 @@
     justify-content: space-between;
 }
 
-
-
 .news-element,
 .lautstaerke-elemente {
     width: 100%;
@@ -82,7 +70,6 @@
     width: 100%;
     max-width: 200px;
 }
-
 
 .control-elemente {
     width: 100%;
@@ -131,11 +118,6 @@
 @media only screen and (max-width: 481px) {
     /* Globale Stile für mobile Geräte */
 
-
-    /* .control-elemente {
-    align-items: center;
-    } */
-
     .radio-player-container {
         padding-top: 10px;
         padding-bottom: 5px;
@@ -143,14 +125,6 @@
         padding-right: 5px;
         font-size: 0.8em;
     }
-
-    /* .radio-player-container {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 0.8em;
-} */
 
     .styling-news-schrift-gaga {
         text-align: left;

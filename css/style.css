@@ -252,7 +252,6 @@ main {
     line-height: 170%;
 }
 
-
 /* Buttons "zum Artikel */
 .button {
     text-decoration: none;
@@ -317,7 +316,6 @@ main {
 .artikel-4 {
     grid-area: 2 / 3 / 3 / 4;
 }
-
 
 /* ÜBER UNS SEITE */
 /* ÜBER UNS SEITE */
@@ -536,7 +534,6 @@ main {
     z-index: 1;
 }
 
-
 /* Style the dropdown links */
 .dropdown .dropdown-content a {
     display: block;
@@ -651,8 +648,6 @@ main {
     width: 40px;
 }
 
-
-
 .ort {
     grid-area: 1 / 1 / 2 / 2;
 }
@@ -664,7 +659,6 @@ main {
 .text-event {
     grid-area: 2 / 1 / 3 / 3;
 }
-
 
 .event-schrift {
     display: grid;
@@ -955,8 +949,6 @@ footer {
     text-align: left;
 }
 
-
-
 /* STYLING MENU MOBILE */
 /* STYLING MENU MOBILE */
 /* STYLING MENU MOBILE */
@@ -969,7 +961,6 @@ footer {
 .hamburger {
     display: none;
 }
-
 
 /* Mobile Version */
 /* Mobile Version */
@@ -1165,7 +1156,6 @@ footer {
         /* Sorgt dafür, dass das Logo nicht breiter als der Bildschirm ist */
     }
 
-
     /* STYLING RADIO PLAYER */
     /* STYLING RADIO PLAYER */
     /* STYLING RADIO PLAYER */
@@ -1191,7 +1181,6 @@ footer {
     .lautstaerke-elemente {
         display: none;
     }
-
 
     /* STYLING FOOTER */
     /* STYLING FOOTER */
@@ -1223,7 +1212,6 @@ footer {
         padding: 10px;
     }
 
-
     /* STYLING Quicklinks */
     /* STYLING Quicklinks */
     /* STYLING Quicklinks */
@@ -1240,7 +1228,6 @@ footer {
     .text {
         padding: 8px 30px;
     }
-
 
     /* STYLING EVENT SEITE */
     /* STYLING EVENT SEITE */
@@ -1311,7 +1298,6 @@ footer {
         display: none;
     }
 
-
     /* Radio Player-Anpassungen für kleine Bildschirme */
     .radio-player-container {
         text-align: center;
@@ -1355,8 +1341,6 @@ footer {
         display: flex;
         flex-direction: column;
     }
-
-
 }
 
 /* Tablet */
@@ -1370,6 +1354,4 @@ footer {
         padding-right: 10px;
         /* Rechter Abstand */
     }
-
-
 }

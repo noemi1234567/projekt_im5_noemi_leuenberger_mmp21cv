@@ -1,3 +1,4 @@
+// Hamburger Menu mobile
 console.log("all.js loaded")
 let navigation = document.querySelector('.hamburger')
 let container = document.querySelector('.navigation_container')
@@ -12,8 +13,7 @@ close.addEventListener("click", function () {
     container.style.transform = "translateY(-100vh)"
 })
 
-
-
+// Dropdown Menu Desktop
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM is loaded");
     const dropdownButton = document.querySelector(".dropdown .dropbtn");
@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
-
-    // ... (dein bestehender Code)
 
     // Radio Player
     var radioPlayer = document.getElementById('radioPlayer');
@@ -104,15 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
             setVolume(laustärke);
         }
     });
-
-
-    // Stop-Button klicken
-    // stopButton.addEventListener('click', function () {
-    //     stopRadio();
-    // });
 });
-
-// Mute-Bild
 
 // Lautstärke-Element auswählen
 const volumeElement = document.querySelector('.ton-aus');
