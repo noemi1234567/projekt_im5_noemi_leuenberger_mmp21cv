@@ -12,7 +12,7 @@ Für das, dass ich eigentlich nicht sonderlich gut coden und programmieren kann,
 
 # Quellen / Arbeitsmittel / Methodik:
 
-Meine wichtigste und auch kompetenteste Quelle waren sicherlich die Dozentinnen und Dozenten vor Ort. Wenn ich sie bei Problemen fragen könnte, war ich meistens schneller als mit ChatGPT und bekam dazu gleich auch noch die entsprechende Erklärung des Codes und so habe ich, denke ich, auch mehr gelernt, als wenn ich nur alleine mit ChatGPT gearbeitet hätte.
+Meine wichtigste und auch kompetenteste Quelle waren sicherlich die Dozentinnen und Dozenten vor Ort. Wenn ich sie bei Problemen fragen konnte, war ich meistens schneller als mit ChatGPT und bekam dazu gleich auch noch die entsprechende Erklärung des Codes und so habe ich sicherlich auch mehr gelernt, als wenn ich nur alleine mit ChatGPT gearbeitet hätte.
 
 Trotzdem habe ich auch mit Hilfe von ChatGPT gearbeitet – vor allem beim Javascript-Code. Die KI hat mir dabei jeweils gute Grundlagen geliefert. Meistens hat dann aber doch nicht ganz alles so geklappt, wie es hätte sollen und so war ich dennoch froh, konnte ich vor Ort jederzeit die Dozentinnen und Dozenten fragen. 
 
